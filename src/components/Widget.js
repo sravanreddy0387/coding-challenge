@@ -7,7 +7,7 @@ class Widget extends Component {
     render() {
         const { widget } = this.props;
         return (
-            <div className='container'>
+            <div className='col-sm-4 text-center'>
                 <div className='widget' style={{ backgroundColor: widget.color }}>
                     <span className='count'>
                         {widget.count}

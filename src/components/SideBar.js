@@ -4,7 +4,7 @@ import logo from '../images/ff_logo.png';
 export default class SideBar extends Component {
     render() {
         return (
-            <div className="collapse d-md-flex min-vh-100 sidebar-container" id="sidebar">
+            <div className="collapse d-lg-flex min-vh-100 sidebar-container" id="sidebar">
                 <ul className="nav flex-column flex-nowrap">
                     <li className="nav-item-brand"> <a className="navbar-brand" href="/">
                         <img src={logo} width="20" height="20" className="d-inline-block align-top" alt="" />

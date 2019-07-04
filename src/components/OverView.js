@@ -26,7 +26,7 @@ export default class OverView extends Component {
         const { data } = this.state;
         return (
             <div className="container">
-                <div className='overview row'>
+                <div className='overview '>
                     <h3>Overview</h3>
                     <div className="widget-container">
                         {data.map((widget => {
@@ -38,7 +38,7 @@ export default class OverView extends Component {
                         }))}
                     </div>
                 </div>
-                <div className='topmusic row'>
+                <div className='topmusic'>
                     <h3>Top Music</h3>
                     <div className='music-content'>
                         <TabHeaders >
@@ -63,13 +63,6 @@ export default class OverView extends Component {
                             </TabHeader>
 
                         </TabHeaders>
-                        {/* <nav>
-                            <div className="nav nav-tabs" id="nav-tab" role="tablist">
-                                <a className="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Artists</a>
-                                <a className="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Songs</a>
-                                <a className="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Moods</a>
-                            </div>
-                        </nav> */}
                         <TabBodies selectedTab={this.state.selectedSubModule}>
                             <TabBody showId={'nav-home-tab'}>
                                 <table class="table">

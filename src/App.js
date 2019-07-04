@@ -7,9 +7,9 @@ import Notification from './components/Notification';
 function App() {
   return (
     <div className="container-fluid">
-      <div className="row">
+      <div className="row continer">
         <SideBar />
-        <div className="col col-main">
+        <div className="col col-main min-vh-100">
           <Notification />
           <OverView />
         </div>
